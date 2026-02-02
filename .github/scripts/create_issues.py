@@ -4,7 +4,8 @@ import os
 import sys
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
-REPO_API_URL = "https://api.github.com/repos/polkadot-developers/polkadot-docs/issues"
+REPO_NAME = os.environ.get("GITHUB_REPOSITORY", "polkadot-developers/polkadot-docs")
+REPO_API_URL = f"https://api.github.com/repos/{REPO_NAME}/issues"
 
 def get_existing_issues():
     """Retrieve all existing issues from GitHub and return a dictionary of {title: number}."""
