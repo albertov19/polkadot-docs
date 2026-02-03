@@ -1,4 +1,4 @@
-re# Variables that can be reused should be added to this file
+# Variables that can be reused should be added to this file
 dependencies:
   repositories:
     zombienet:
